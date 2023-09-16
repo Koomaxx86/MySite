@@ -1,12 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MySite</title>
+  <title>Document</title>
+
+  <!-- 폰트 어썸 라이브러리 -->
+  <!-- swiper 라이브러리 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/swiper-theme.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (e) => {
+    let btn1 = document.getElementById('button1')
+    let btn2 = document.getElementById('button2')
+    btn1.addEventListener('click', () => { alert('Click')})
+    btn2.addEventListener('click', () => { alert('Click')})
+    })
+  </script>
+
+  <!-- 폰트 -->
+  <style>
+    @font-face {
+      font-family: 'NanumSquare Bold';
+      src: url(fonts/NanumSquareB.otf);
+    }
+  </style>
+
 </head>
+
 <body>
-  <h1>My Site</h1>
-  <h3>안녕하세요 김조은 입니다~!</h3>
+<div class="container">
+  <header>
+    <!-- (로그인/회원가입) -->
+    <div class="util">
+        <li><a href="">로그인</a></li>
+        <li><a href="">회원가입</a></li>
+    </div>
+
+
+    <!-- 메뉴 -->
+    <div class="menu">
+      <!-- 왼쪽 -->
+      <div class="menu-left">
+        <a href=""><i class="fa fa-user"></i></a>
+      </div>
+      <!-- 가운데 -->
+      <div class="menu-center">
+        <ul>
+          <li><a href="">Home</li></a>
+          <li><a href="">Board</li></a>
+          <li><a href="">Gallery</li></a>
+          <li><a href="">About</li></a>
+        </ul>
+      </div>
+      <!-- 오른쪽 -->
+      <div class="menu-right">
+        <a href=""><i class="fa fa-bars"></i></a>
+      </div>
+    </div>
+  </header>
+
+
+  <section>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="../Test/img/slide01.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../Test/img/slide02.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../Test/img/slide03.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../Test/img/slide04.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../Test/img/slide05.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../Test/img/slide06.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../Test/img/slide07.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../Test/img/slide08.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../Test/img/slide09.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../Test/img/slide10.jpg" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-scrollbar"></div>
+  </div>
+  </section>
+  
+  <section>
+    <div class="s3container">
+      <div class="s3img">
+        <img src="../Test/img/dog.jpg" alt="">
+      </div>
+      <div class="s3title">
+        <h1>Title-Hello Text 001</h1>
+      </div>
+      <div class="s3textbox">
+        empty content. empty content. empty content.
+      </div>
+      <div class="s3button">
+        <button id="button1">button 001</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="s4container">
+      <div class="s4img">
+        <img src="../Test/img/cat.jpg" alt="">
+      </div>
+      <div class="s4title">
+        <h1>Title-Hello Text 002</h1>
+      </div>
+      <div class="s4textbox">
+        empty content. empty content. empty content.
+      </div>
+      <div class="s4button">
+        <button id="button2">button 002</button>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="cr">
+      <ul>
+        <li class="b2">Board</li>
+        <li class="b3">Gallery</li>
+        <li class="b4">About</li>
+        <li class="b5">공지사항</li>
+        <li class="b6">갤러리01</li>
+        <li class="b7">사이트 소개</li>
+        <li class="b1">자유 게시판</li>
+        <li class="b8">갤러리02</li>
+      </ul>
+      <p class="family">
+        <select name="family">
+          <option value="1">네이버</option>
+          <option value="2">카카오</option>
+          <option value="3">유튜브</option>
+        </select>
+      </p>
+      <p class="copy">Copyright All rights reserved</p>
+    </div>
+</footer>
+
+
+</div>
 </body>
+
 </html>
