@@ -89,8 +89,8 @@ color: black;
 .s2set02,
 .s2set03 {
   display: grid;
-  border: 2px solid black;
-  border-radius: 10px; 
+
+  border-radius: 20px; 
   height: 80%;
   background-color: white;
 }
@@ -123,7 +123,6 @@ color: black;
 .like {
   text-align: center;
 }
-
 
 /* ------------------------------------------ */
 
