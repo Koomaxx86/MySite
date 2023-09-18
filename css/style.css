@@ -73,12 +73,67 @@ color: black;
 }
 
 /* ------------------------------------------ */
+.s2container {
+  display: grid;
+  width: 1000px;
+  height: 480px;
+  margin: 0 auto; 
+  grid-template-columns: 30% 30% 30%; 
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  background-color: skyblue;
+}
+
+.s2set01,
+.s2set02,
+.s2set03 {
+  display: grid;
+  border: 2px solid black;
+  border-radius: 10px; 
+  height: 80%;
+  background-color: white;
+}
+
+.s2img img {
+  display: grid;
+  max-width: 100%; 
+  max-height: 100%
+  width: auto;
+  height: auto;
+}
+
+.s2title {
+  display: grid;
+  text-align: center;
+  height: auto;
+}
+
+.day_like {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  margin-top: auto;
+  
+}
+
+.day {
+  opacity: 0.3;
+}
+
+.like {
+  text-align: center;
+}
+
+
+/* ------------------------------------------ */
 
 
 .s3container,
 .s4container
  {
   display: grid;
+  width: 1000px;
+  margin: 0 auto; 
   grid-template-columns: 500px 500px; 
   grid-template-rows: 60px auto auto;
   justify-content: center;
@@ -133,6 +188,10 @@ color: black;
 
 /* ------------------------------------------ */
 
+.s4container {
+background-color: skyblue;
+}
+
 .s4img {
   grid-column: 2; 
   grid-row: span 3; 
@@ -158,6 +217,10 @@ color: black;
   grid-row: 3;
   justify-content: end;
   align-items: center;
+}
+
+#button2 {
+  background-color: rgb(93, 148, 192);
 }
 
 
